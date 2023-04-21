@@ -1,0 +1,10 @@
+
+<div *ngIf=coin> 
+    <h2>Detalle: {{coin.name}}</h2>
+    <div>id: {{coin.id}}</div>
+    <input type="text" [(ngModel)]="coin.name">
+    <div>name: {{coin.name}}</div>
+
+    <div>value: {{coin.value}}</div>
+    <button (click)="subir_precio(coin)">Subir precio!</button>
+</div>

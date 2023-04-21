@@ -1,0 +1,22 @@
+.coins{
+    width: 200px;
+
+}
+
+.coins button{
+    cursor:pointer;
+    text-align:center
+}
+
+.coins button:hover{
+    background-color: aquamarine;
+}
+
+.coins .selected{
+    background-color: forestgreen;
+}
+
+.coins li{
+   display: grid; 
+   margin:5px;
+}

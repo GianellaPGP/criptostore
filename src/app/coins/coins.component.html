@@ -1,0 +1,14 @@
+<div class="coins">
+<p>You can buy {{title}}</p>
+<ul>
+    <li *ngFor="let coin of coins">
+        <button type="button" (click)="onSelect(coin)"[class.selected]="coin == selectedCoin">
+        <span>{{coin.name}}</span>
+        </button>
+    </li>
+
+</ul>
+
+</div>
+
+<app-coin-detail [coin]="selectedCoin"></app-coin-detail>
